@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phoneLoginActivity">
+
+    <ImageView
+        android:id="@+id/imgPhn"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/img_code_verification"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+
+        >
+    </ImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phnNoInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/inputs"
+        android:layout_below="@id/imgPhn"
+        android:layout_marginTop="20dp"
+        android:textCursorDrawable="@color/colorPrimary"
+        android:padding="5dp"
+        android:hint="Enter Your Mobile no."
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+        android:textAlignment="center"
+        >
+    </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/otpNoInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/inputs"
+        android:layout_below="@id/phnNoInput"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:hint="Enter verification Code"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSendVerfCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Verification Code"
+        android:layout_below="@+id/otpNoInput"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/buttons"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/btnverifyfCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed Code"
+        android:layout_below="@+id/btnSendVerfCode"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/buttons"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        >
+    </Button>
+
+
+
+
+</RelativeLayout>
